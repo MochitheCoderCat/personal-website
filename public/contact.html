@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+
+        .contact-me {
+            margin-top: 80px;
+            width: 50%;
+            margin-left: 25%;
+            color: black;
+            font-family: serif;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            height: 50vh;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+
+        }
+
+
+        .item {
+            font-size: 1rem;
+            color: #FFD0EC;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #474F7A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-color: #4caf50;
+        }
+
+        
+
+        img.self-img:hover {
+            height: 400px;
+            width: 400px;
+            transition: 0.5s;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Contact Info</h1>
+    </header>
+    <main>
+        <div class="navigation-bar">
+            <div class="button" ><a href="../index.html">Main Page</a> </div>
+            <div class="button" id="current-page"><a href="./contact.html"> Contact</a> </div>
+            <div class="button"> <a href="./projects.html"> Projects</a> </div>
+            <div class="button"> <a href="./hobbies.html"> Hobbies</a> </div>
+        </div>
+
+        <div class="contact-me">
+            <img class="self-img" src="../assets/images/contact_pic.jpg">
+            <h1>Here are a few ways to reach me!</h1>
+            <div class="contact-grid">
+                <div class="item">☎️ Tel:</div>
+                <div class="item">123-456-7890</div>
+                <div class="item">📧 Email:</div>
+                <div class="item">wang.qianyu@northeastern.edu</div>
+                <div class="item">📃 LinkedIn</div>
+                <div class="item"><a href="https://www.linkedin.com/in/amber-q-wang/">Click here!</a></div>
+
+            </div>  
+        </div>
+        
+    </main>
+
+    
+</body>
+</html>

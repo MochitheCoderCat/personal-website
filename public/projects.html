@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+
+        .projects-container {
+            width: 70%;
+            margin-left: 20%;
+            margin-top: 50px;
+            margin-right: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            gap: 2rem;
+        }
+
+        @media (max-width: 1250px) {
+            .projects-container {
+            flex-direction: column;
+            height: 100%;
+      }
+    }
+
+        .project {
+            flex: 1;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            text-align: center;
+            color: #747264;
+        }
+
+
+
+        .project-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            padding: 0;
+            margin: 40px;
+            list-style-type:circle;
+    }
+
+        .skills li {
+        margin-bottom: 10px;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <main>
+        <div class="navigation-bar">
+            <div class="button"  ><a href="../index.html">Main Page</a> </div>
+            <div class="button"><a href="./contact.html"> Contact</a> </div>
+            <div class="button" id="current-page"> <a href="./projects.html"> Projects</a> </div>
+            <div class="button"> <a href="./hobbies.html"> Hobbies</a> </div>
+        </div>
+        <div class="projects-container">
+            <div class="project">
+                <div class="project-title">EducatorConnect</div>
+                <div class="description">A comprehensive web platform for language teachers to connect and share
+                </div>
+                <ul class="skills">
+                  <li>Bootstrap</li>
+                  <li>React.js</li>
+                  <li>MySQL</li>
+                  <li>RESTful APIs</li>
+                </ul>
+              </div>
+              <div class="project">
+                <div class="project-title">Django Web Game</div>
+                <div class="description">A PUBG -battle ground like game with features of interfaces, account system, battle, chat, and matchmaking system	</div>
+                <ul class="skills">
+                  <li>Docker</li>
+                  <li>Django</li>
+                  <li>WebSockets</li>
+                  <li>Redis</li>
+                  <li>Thrift</li>
+                </ul>
+              </div>
+              <div class="project">
+                <div class="project-title">Theater Reservation System</div>
+                <div class="description">A CLI-based reservation system for movie theaters in Java	</div>
+                <ul class="skills">
+                  <li>Object-Oriented Design</li>
+                  <li>Java</li>
+                </ul>
+              </div>
+            </div>
+
+        
+        
+    </main>
+
+    
+</body>
+</html>

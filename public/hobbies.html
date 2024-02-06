@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .container {
+            margin-top: 50px;
+            margin-left: 15%;
+            margin-right: 10%;
+            height: 100vh;
+            display: grid;
+            gap: 3rem;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1.5fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 1250px) {
+            .container {
+            margin-left: 20%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+
+        .item {
+            font-size: 16px;
+            color: #747264;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+
+        }
+
+        .skiing {
+            background-color: #F5EEE6;
+            grid-column: span 2;
+        }
+
+        .movies {
+            background-color: #FFF8E3;
+            grid-area: 2 / 1 / 3 / 3;
+        }
+
+        .hiking {
+            background-color: #F3D7CA;
+            grid-area: 1 / 3 / 3 / 3; 
+        
+        }
+
+        .plants {
+            background-color: #E6A4B4;
+            grid-area: 3/1/4/-1;
+        }
+
+        img {
+            float: inline-end;
+            margin: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Hobbies</h1>
+    </header>
+    <main>
+        <div class="navigation-bar">
+            <div class="button" ><a href="../index.html">Main Page</a> </div>
+            <div class="button" ><a href="./contact.html"> Contact</a> </div>
+            <div class="button"> <a href="./projects.html"> Projects</a> </div>
+            <div class="button" id="current-page"> <a href=".hobbies.html"> Hobbies</a> </div>
+        </div>
+
+        <div class="container">
+            <div class="item skiing">
+                <img src="../assets/images/skiing.jpg">
+                <p>Skiing offers an exhilarating escape into the crisp, white expanse of snow-covered mountains. Gliding down slopes with the wind in my face, I feel a rush of adrenaline and freedom unmatched by any other activity. It's not just a sport but a way to connect with nature, challenge my limits, and enjoy the stunning winter scenery.</p>
+            </div>
+            <div class="item movies">
+                <img src="../assets/images/movies.jpg">
+                <p>Watching movies is a journey into countless worlds, emotions, and stories. Each film is a new adventure, offering insights into different cultures, ideas, and human experiences. It's a hobby that allows me to relax and unwind, yet simultaneously stimulates my imagination and broadens my understanding of the world.</p>
+            </div>
+            <div class="item hiking">
+                <img src="../assets/images/hiking.jpg">
+                <p>Hiking is my way of exploring the great outdoors, pushing my physical boundaries, and finding peace away from the hustle of daily life. Each trail offers unique landscapes, from lush forests and mountain peaks to serene lakes and hidden waterfalls. It's a chance to reflect, recharge, and appreciate the simple beauty of nature.</p>
+            </div>
+            <div class="item plants">
+                <img src="../assets/images/plants.jpg">
+                <p>Taking care of plants is a nurturing and grounding hobby that connects me to the cycle of life. Watching them grow and thrive under my care brings a sense of accomplishment and tranquility. It's a peaceful, meditative activity that beautifies my surroundings and improves my well-being by bringing a piece of nature into my home.</p>
+            </div>
+          </div>
+        
+    </main>
+
+    
+</body>
+</html>
